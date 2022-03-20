@@ -1,4 +1,5 @@
-\documentclass[12pt, letterpaper, twoside]{article}
+\documentclass[twoside,12pt,a4paper,english]{article}
+
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{listings}
@@ -27,6 +28,40 @@
 \usepackage{skak}
 \usepackage[scaled=0.95]{inconsolata}
 
+\usepackage[a4paper,vmargin=30mm,hmargin=33mm,footskip=15mm]{geometry}
+
+
+
+\usetikzlibrary{patterns,snakes}
+\pagestyle{plain}
+
+\definecolor{keywords}{HTML}{44548A}
+\definecolor{strings}{HTML}{00999A}
+\definecolor{comments}{HTML}{990000}
+
+\lstset{language=C++,frame=single,basicstyle=\ttfamily \small,showstringspaces=false,columns=flexible}
+\lstset{
+  literate={ö}{{\"o}}1
+           {ä}{{\"a}}1
+           {ü}{{\"u}}1
+}
+\lstset{xleftmargin=20pt,xrightmargin=5pt}
+\lstset{aboveskip=12pt,belowskip=8pt}
+
+\lstset{
+    commentstyle=\color{comments},
+    keywordstyle=\color{keywords},
+    stringstyle=\color{strings}
+}
+
+\makeindex
+\usepackage[totoc]{idxlayout}
+
+\titleformat{\subsubsection}
+{\normalfont\large\bfseries\sffamily}{\thesubsection}{1em}{}
+
+
+
 \title{\Huge Guide to `FAANG' Companies}
 \author{\Large Inkollu Akashdhar}
 \date{Draft \today}
@@ -37,8 +72,7 @@
 \maketitle
 \end{titlepage}
 
-In this document some extra packages and parameters
-were added. There is an encoding package
-and pagesize and fontsize parameters.
+This provies a comprehensive document for exaustive list of 
+Algorithms and Data Structures required to crack any coding interview.
 
 \end{document}
